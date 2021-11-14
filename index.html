@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Management Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js">
+    </script>
+
+  </head>
+
+  <body>
+    <div class="dashboard"> <!-- Dashboard -->
+
+      <section class="navigation"> <!--navigation-->
+        <div class="inst">
+          <img src="assets/img/instincthub-logo.png" alt="Instincthub logo" class="logo">
+        </div>
+
+      <div class="tab">
+        <div class="unit">
+          <div class="category"></div>
+          <img src="assets/img/bx_bxs-dashboard.png" alt="Overview">
+          <p>Overview</p>
+        </div>
+
+        <div class="unit">
+          <img src="assets/img/akar-icons_file.png" alt="Classes">
+          <p>Classes</p>
+        </div>
+
+        <div class="unit">
+          <img src="assets/img/codicon_graph.png" alt="Analytics">
+          <p>Analytics</p>
+        </div>
+
+        <div class="unit">
+          <img src="assets/img/ic_baseline-group.png" alt="Community">
+          <p>Community</p>
+        </div>
+
+        <div class="unit">
+          <img src="assets/img/fe_logout.png" alt="Logout">
+          <p>Logout</p>
+        </div>
+      </div>
+
+
+        <div class="gift">
+          <img src="assets/img/Upgrade illustration.png" alt="Upgrade iilustration." class="box">
+          <p>Upgrade your student portal account</p>
+          <button type="submit">Upgrade</button>
+        </div>
+
+      </section> <!-- Navigation End -->
+
+      <section class="main"> <!-- Main -->
+
+        <div class="search"> <!-- Search -->
+          <h1>My course dashboard</h1>
+          <form action="">
+              <input type="text" name="search" id="search"
+              placeholder="You are looking for...">
+              <img src="assets/img/bx_bx-search.png" alt="Search tool">
+          </form>
+
+          <div class="notification">
+              <img src="assets/img/codicon_bell-dot.png" alt="notification">
+              <img src="assets/img/User profile.png" alt="User profile">
+          </div>
+        </div> <!-- Search End-->
+
+        <div class="chart">
+          <div class="first_chart">
+            <!-- <canvas id="myChart" width="0" height="0"></canvas> -->
+            <h1>Daily</h1>
+            <h2>71%</h2>
+            <p>Activities</p>
+          </div>
+
+          <div class="second_chart">
+            <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+            <h1>Monthly</h1>
+            <h2>20%</h2>
+            <p>Activities</p>
+          </div>
+
+          <div class="third_chart">
+            <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+            <h1>Yearly</h1>
+            <h2>12%</h2>
+            <p>Activities</p>
+          </div>
+
+        </div>
+
+
+      </section> <!-- Main End -->
+
+
+    </div> <!-- Dashboard End -->
+
+    <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+  labels: [
+    'Red',
+    'Blue',
+    'Yellow'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [300, 50, 100],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)'
+    ],
+    hoverOffset: 4
+  }]
+};
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    </script>
+
+
+
+ </body>
+</html>
