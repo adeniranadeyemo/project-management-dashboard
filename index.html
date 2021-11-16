@@ -337,6 +337,8 @@
 
       <!-- Table -->
 
+
+
       </section> <!-- Main End -->
 
 
@@ -364,6 +366,12 @@
   }]
 },
         options: {
+          elements: {
+            arc: {
+              borderWidth: 0
+            }
+          },
+
             maintainAspectRatio: false,
 
             plugins: {
@@ -407,10 +415,10 @@
     </script>
 
     <script>
-    const ctx = document.getElementById('firstChart').getContext('2d');
-    const firstChart = new Chart(ctx, {
+    const ftx = document.getElementById('firstChart').getContext('2d');
+    const firstChart = new Chart(ftx, {
         type: 'doughnut',
-        data1: {
+        data: {
     labels: [
     'Red',
     'Blue',
@@ -428,6 +436,12 @@
   }]
   },
         options: {
+          elements: {
+            arc: {
+              borderWidth: 0
+            }
+          },
+
             maintainAspectRatio: false,
 
             plugins: {
@@ -471,8 +485,8 @@
     </script>
 
     <script>
-    const ctx = document.getElementById('thirdChart').getContext('2d');
-    const thirdChart = new Chart(ctx, {
+    const gtx = document.getElementById('thirdChart').getContext('2d');
+    const thirdChart = new Chart(gtx, {
         type: 'doughnut',
         data: {
     labels: [
@@ -492,6 +506,12 @@
     }]
     },
         options: {
+          elements: {
+            arc: {
+              borderWidth: 0
+            }
+          },
+
             maintainAspectRatio: false,
 
             plugins: {
