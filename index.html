@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js">
     </script>
 
+
   </head>
 
   <body>
@@ -78,21 +79,27 @@
 
         <div class="chart">
           <div class="first_chart">
-            <!-- <canvas id="myChart" width="0" height="0"></canvas> -->
+            <div class="chartBox">
+              <canvas id="firstChart"></canvas>
+            </div>
             <h1>Daily</h1>
             <h2>71%</h2>
             <p>Activities</p>
           </div>
 
           <div class="second_chart">
-            <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+              <div class="chartBox">
+                <canvas id="myChart"></canvas>
+              </div>
             <h1>Monthly</h1>
             <h2>20%</h2>
             <p>Activities</p>
           </div>
 
           <div class="third_chart">
-            <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+            <div class="chartBox">
+              <canvas id="thirdChart"></canvas>
+            </div>
             <h1>Yearly</h1>
             <h2>12%</h2>
             <p>Activities</p>
@@ -100,6 +107,235 @@
 
         </div>
 
+        <!-- Table -->
+      <!-- Table
+        First_part -->
+          <table>
+            <thead>
+              <tr>
+                <th class="number">
+                  No
+                </th>
+
+                <th class="course_name">
+                  Course Name
+                </th>
+
+                <th class="department">
+                  Department
+                </th>
+
+                <th class="units">
+                  Units
+                </th>
+
+                <th class="gpa">
+                  Gpa
+                </th>
+
+              </tr>
+            </thead>
+            <!-- First_part ends -->
+
+          <!-- Second_part -->
+
+            <tbody>
+              <!-- First row -->
+              <tr>
+                <td class="number">
+                  0
+                </td>
+
+                <td class="course_name">
+                  Tax Academy Introduction
+                </td>
+
+                <td class="department">
+                  Finances
+                </td>
+
+                <td class="units">
+                  3
+                </td>
+
+                <td class="gpa">
+                  4.3/5
+                </td>
+              </tr>
+              <!-- First row ends-->
+
+              <!-- Second row -->
+              <tr>
+                <td class="number">
+                  1
+                </td>
+
+                <td class="course_name">
+                  Transfer Pricing
+                </td>
+
+                <td class="department">
+                  Customer Service
+                </td>
+
+                <td class="units">
+                  3
+                </td>
+
+                <td class="gpa">
+                  4.3/5
+                </td>
+
+              </tr>
+              <!-- Second row ends-->
+
+              <!-- Third row -->
+              <tr>
+                <td class="number">
+                  2
+                </td>
+
+                <td class="course_name">
+                  Tax Academy for Beginners
+                </td>
+
+                <td class="department">
+                  Purchasing
+                </td>
+
+                <td class="units">
+                  3
+                </td>
+
+                <td class="gpa">
+                  4.3/5
+                </td>
+              </tr>
+              <!-- Third row ends -->
+
+<!-- Fourth row -->
+              <tr>
+                <td class="number">
+                  3
+                </td>
+
+                <td class="course_name">
+                  New Business
+                </td>
+
+                <td class="department">
+                  Finances
+                </td>
+
+                <td class="units">
+                  3
+                </td>
+
+                <td class="gpa">
+                  3.0/5
+                </td>
+            </tr>
+<!-- Fourth row end-->
+
+<!-- Fifth row -->
+              <tr>
+                <td class="number">
+                  4
+                </td>
+
+                <td class="course_name">
+                  Tax Accounting
+                </td>
+
+                <td class="department">
+                  Administration
+                </td>
+
+                <td class="units">
+                  8
+                </td>
+
+                <td class="gpa">
+                  4.7/5
+                </td>
+            </tr>
+<!-- Fifth row end-->
+
+<!-- sixth row -->
+              <tr>
+                <td class="number">
+                  5
+                </td>
+
+                <td class="course_name">
+                  Motion Design
+                </td>
+
+                <td class="department">
+                  IT Dep
+                </td>
+
+                <td class="units">
+                  6
+                </td>
+
+                <td class="gpa">
+                  4.4/5
+                </td>
+            </tr>
+<!-- sixth row end-->
+
+<!-- Seventh row -->
+              <tr>
+                <td class="number">
+                  6
+                </td>
+
+                <td class="course_name">
+                  3D Modeling
+                </td>
+
+                <td class="department">
+                  IT Dep
+                </td>
+
+                <td class="units">
+                  3
+                </td>
+
+                <td class="gpa">
+                  3.0/5
+                </td>
+            </tr>
+<!-- Seventh row end-->
+
+<!-- Eighth row -->
+              <tr>
+                <td class="number">
+                  7
+                </td>
+
+                <td class="course_name">
+                  Brand Strategy on Instagram
+                </td>
+
+                <td class="department">
+                  Marketing
+                </td>
+
+                <td class="units">
+                  3
+                </td>
+
+                <td class="gpa">
+                  4.7/5
+                </td>
+            </tr>
+<!-- Eighth row end-->
+            </tbody>
+          </table>
+
+      <!-- Table -->
 
       </section> <!-- Main End -->
 
@@ -111,7 +347,7 @@
     const myChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-  labels: [
+    labels: [
     'Red',
     'Blue',
     'Yellow'
@@ -126,18 +362,177 @@
     ],
     hoverOffset: 4
   }]
-};
+},
         options: {
+            maintainAspectRatio: false,
+
+            plugins: {
+              legend: {
+                display: false
+              },
+            },
+
             scales: {
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+
+                    ticks: {
+                      display: false
+                    },
+
+                    grid: {
+                      borderColor: 'green',
+                      drawBorder: false,
+                      drawOnChartArea: false,
+                      display: false
+                    }
+                },
+
+              x: {
+                ticks: {
+                  display: false
+                },
+
+                grid: {
+                  display: false,
+                  drawBorder: false,
+                  lineWidth: 5,
+                  display: false
+
                 }
+              }
             }
         }
     });
     </script>
 
+    <script>
+    const ctx = document.getElementById('firstChart').getContext('2d');
+    const firstChart = new Chart(ctx, {
+        type: 'doughnut',
+        data1: {
+    labels: [
+    'Red',
+    'Blue',
+    'Yellow'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [300, 50, 100],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)'
+    ],
+    hoverOffset: 4
+  }]
+  },
+        options: {
+            maintainAspectRatio: false,
 
+            plugins: {
+              legend: {
+                display: false
+              },
+            },
+
+            scales: {
+                y: {
+                    beginAtZero: true,
+
+                    ticks: {
+                      display: false
+                    },
+
+                    grid: {
+                      borderColor: 'green',
+                      drawBorder: false,
+                      drawOnChartArea: false,
+                      display: false
+                    }
+                },
+
+              x: {
+                ticks: {
+                  display: false
+                },
+
+                grid: {
+                  display: false,
+                  drawBorder: false,
+                  lineWidth: 5,
+                  display: false
+
+                }
+              }
+            }
+        }
+    });
+    </script>
+
+    <script>
+    const ctx = document.getElementById('thirdChart').getContext('2d');
+    const thirdChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+    labels: [
+    'Red',
+    'Blue',
+    'Yellow'
+    ],
+    datasets: [{
+    label: 'My First Dataset',
+    data: [300, 50, 100],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)'
+    ],
+    hoverOffset: 4
+    }]
+    },
+        options: {
+            maintainAspectRatio: false,
+
+            plugins: {
+              legend: {
+                display: false
+              },
+            },
+
+            scales: {
+                y: {
+                    beginAtZero: true,
+
+                    ticks: {
+                      display: false
+                    },
+
+                    grid: {
+                      borderColor: 'green',
+                      drawBorder: false,
+                      drawOnChartArea: false,
+                      display: false
+                    }
+                },
+
+              x: {
+                ticks: {
+                  display: false
+                },
+
+                grid: {
+                  display: false,
+                  drawBorder: false,
+                  lineWidth: 5,
+                  display: false
+
+                }
+              }
+            }
+        }
+    });
+    </script>
 
  </body>
 </html>
