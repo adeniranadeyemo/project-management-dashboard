@@ -56,7 +56,7 @@
         <div class="gift">
           <img src="assets/img/Upgrade illustration.png" alt="Upgrade iilustration." class="box">
           <p>Upgrade your student portal account</p>
-          <button type="submit">Upgrade</button>
+          <button type="button">Upgrade</button>
         </div>
 
       </section> <!-- Navigation End -->
@@ -335,84 +335,26 @@
             </tbody>
           </table>
 
-      <!-- Table -->
+      <!-- Table end -->
+
+      <div class="last">
+        <div class="words">
+          <h1>When nothing goes right, go left</h1>
+          <p>Build your skills with courses and degree online from anywhere with
+            professional help
+          </p>
+          <button type="button">Learn more</button>
+          <img src="assets/img/female image.png" alt="Female image"/>
+        </div>
+
+      </div>
+
 
 
 
       </section> <!-- Main End -->
 
-
     </div> <!-- Dashboard End -->
-
-    <script>
-    const ctx = document.getElementById('myChart').getContext('2d');
-    const myChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-    labels: [
-    'Red',
-    'Blue',
-    'Yellow'
-  ],
-  datasets: [{
-    label: 'My First Dataset',
-    data: [300, 50, 100],
-    backgroundColor: [
-      'rgb(255, 99, 132)',
-      'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'
-    ],
-    hoverOffset: 4
-  }]
-},
-        options: {
-          elements: {
-            arc: {
-              borderWidth: 0
-            }
-          },
-
-            maintainAspectRatio: false,
-
-            plugins: {
-              legend: {
-                display: false
-              },
-            },
-
-            scales: {
-                y: {
-                    beginAtZero: true,
-
-                    ticks: {
-                      display: false
-                    },
-
-                    grid: {
-                      borderColor: 'green',
-                      drawBorder: false,
-                      drawOnChartArea: false,
-                      display: false
-                    }
-                },
-
-              x: {
-                ticks: {
-                  display: false
-                },
-
-                grid: {
-                  display: false,
-                  drawBorder: false,
-                  lineWidth: 5,
-                  display: false
-
-                }
-              }
-            }
-        }
-    });
-    </script>
 
     <script>
     const ftx = document.getElementById('firstChart').getContext('2d');
@@ -426,16 +368,17 @@
   ],
   datasets: [{
     label: 'My First Dataset',
-    data: [300, 50, 100],
+    data: [300, 100],
     backgroundColor: [
       'rgb(255, 99, 132)',
       'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'
     ],
     hoverOffset: 4
   }]
   },
         options: {
+          cutout: 70,
+
           elements: {
             arc: {
               borderWidth: 0
@@ -485,27 +428,99 @@
     </script>
 
     <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: [
+          'Red',
+          'Blue',
+          'Yellow'
+        ],
+        datasets: [{
+          label: 'My First Dataset',
+          data: [200, 200],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(54, 162, 235)',
+          ],
+          hoverOffset: 4
+        }]
+      },
+      options: {
+        cutout: 70,
+
+        elements: {
+          arc: {
+            borderWidth: 0
+          }
+        },
+
+        maintainAspectRatio: false,
+
+        plugins: {
+          legend: {
+            display: false
+          },
+        },
+
+        scales: {
+          y: {
+            beginAtZero: true,
+
+            ticks: {
+              display: false
+            },
+
+            grid: {
+              borderColor: 'green',
+              drawBorder: false,
+              drawOnChartArea: false,
+              display: false
+            }
+          },
+
+          x: {
+            ticks: {
+              display: false
+            },
+
+            grid: {
+              display: false,
+              drawBorder: false,
+              lineWidth: 5,
+              display: false
+
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+    <script>
     const gtx = document.getElementById('thirdChart').getContext('2d');
     const thirdChart = new Chart(gtx, {
-        type: 'doughnut',
-        data: {
-    labels: [
-    'Red',
-    'Blue',
-    'Yellow'
-    ],
-    datasets: [{
-    label: 'My First Dataset',
-    data: [300, 50, 100],
-    backgroundColor: [
-      'rgb(255, 99, 132)',
-      'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'
-    ],
-    hoverOffset: 4
-    }]
-    },
+      type: 'doughnut',
+      data: {
+        labels: [
+          'Red',
+          'Blue',
+          'Yellow'
+        ],
+        datasets: [{
+          label: 'My First Dataset',
+          data: [330, 70],
+          backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(54, 162, 235)',
+          ],
+          hoverOffset: 4
+        }]
+      },
         options: {
+          cutout: 70,
+
           elements: {
             arc: {
               borderWidth: 0
