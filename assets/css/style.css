@@ -375,3 +375,116 @@ td, th {
 .dashboard .main .last .words img{
   margin-bottom: 150px;
 }
+
+
+@media only screen and (min-width: 768px){
+.dashboard .navigation .inst{
+  height: 100px;
+}
+
+.dashboard .navigation .inst img{
+  margin: 40px 0px 20px 180px;
+}
+
+.dashboard .navigation .tab{
+  margin-top: 50px;
+}
+
+.dashboard .navigation .tab .unit p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dashboard .navigation .gift .box{
+  height: 200px;
+  margin-left: 230px;
+  bottom: 100px;
+}
+
+.dashboard .navigation .gift p{
+  font-size: 30px;
+  left: 100px;
+  top: 100px;
+}
+
+.dashboard .navigation .gift button{
+  left: 210px;
+  top: 200px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.dashboard .main .search{
+  height: 150px;
+}
+
+.dashboard .main .search h1{
+  left: 20px;
+}
+
+.dashboard .main .search form{
+  top: 40px;
+  left: 15px;
+}
+
+.dashboard .main .search form input{
+  width: 400px;
+  font-size: 20px;
+}
+
+.dashboard .main .search div{
+  margin-top: 90px;
+  margin-right: 40px;
+}
+
+.dashboard .main .chart .first_chart h1{
+  right: 89px;
+}
+
+.dashboard .main .chart .first_chart p{
+  right: 80px;
+}
+
+.dashboard .main .chart .first_chart .chartBox{
+  left: 230px;
+}
+
+.dashboard .main .chart .first_chart h2{
+  left: 230px;
+}
+
+
+.dashboard .main .chart .second_chart h1{
+  right: 50px;
+}
+
+.dashboard .main .chart .second_chart p{
+  right: 80px;
+}
+
+.dashboard .main .chart .second_chart .chartBox{
+  left: 230px;
+}
+
+.dashboard .main .chart .second_chart h2{
+  left: 230px;
+}
+
+.dashboard .main .chart .third_chart h1{
+  right: 80px;
+}
+
+.dashboard .main .chart .third_chart p{
+  right: 80px;
+}
+
+.dashboard .main .chart .third_chart .chartBox{
+  left: 230px;
+}
+
+.dashboard .main .chart .third_chart h2{
+  left: 230px;
+}
+
+
+}
