@@ -268,7 +268,7 @@ position: absolute;
   width: 100%;
   margin: 60px 0px 30px 0px;
   position: relative;
-  height: 200px;
+  /* height: 200px; */
 }
 
 .dashboard .main table thead{
@@ -277,13 +277,12 @@ position: absolute;
   position: absolute;
   background-color: black;
   color: white;
-  margin: 20px 0px 10px 0px;
+  /* margin: 20px 0px 10px 0px; */
   border-radius: 10px 10px 0px 0px;
 }
 
 .dashboard .main table thead tr th{
   font-size: 20px;
-  column-span: 20;
 }
 
 .dashboard .main table tbody{
@@ -296,21 +295,59 @@ position: absolute;
 }
 
 tbody tr:nth-of-type(odd) {
-  background: #eee;
+  /* background: #eee; */
 }
 
-th{
+/* th{
   text-align: left;
+} */
+
+.dashboard .main table thead tr th.number{
+  left: 0px;
+  padding: 0px -10px 20px 0px;
+  position: absolute;
+  top: 12px;
+  /* background-color: green; */
 }
 
-.dashboard .main table tbody tr th.course_name{
-  margin-left: 25px;
+.dashboard .main table thead tr th.course_name{
+  left: 32px;
+  padding: 0px -15px 20px 0px;
+  position: absolute;
+  top: 12px;
+  /* background-color: green; */
 }
+
+.dashboard .main table thead tr th.department{
+  left: 160px;
+  padding: 0px -10px 20px 0px;
+  position: absolute;
+  top: 12px;
+  /* background-color: green; */
+}
+
+.dashboard .main table thead tr th.units{
+  left: 278px;
+  padding: 0px -10px 20px 0px;
+  position: absolute;
+  top: 12px;
+  /* background-color: green; */
+}
+
+.dashboard .main table thead tr th.gpa{
+  left: 330px;
+  padding: 0px -10px 20px 0px;
+  position: absolute;
+  top: 12px;
+  border: 1px solid grey;
+}
+
+
 
 td{
   padding: 6px;
-  border: 1px solid #ccc;
-  text-align: left;
+  /* border: 1px solid #ccc; */
+  /* text-align: left; */
 }
 
 
@@ -486,5 +523,31 @@ td, th {
   left: 230px;
 }
 
+table{
+  background-color: greenyellow;
+  length: 300px;
+  width: 100%;
+}
+
+.dashboard .main table thead{
+  background-color: black;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.dashboard .main table thead tr{
+  width: 100%;
+}
+
+th{
+  width: 100%;
+  line-height: 24px;
+}
+
+th.units{
+  bottom: 90px;
+  /* padding: 50px; */
+  column-span: 40px;
+}
 
 }
