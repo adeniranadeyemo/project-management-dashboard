@@ -11,7 +11,7 @@ body {
 /*Navigation*/
 .dashboard {
   padding: 5px 0px;
-  /* margin: 0px auto; */
+  margin: auto;
 }
 
 .dashboard .navigation{
@@ -20,7 +20,6 @@ body {
 
 .dashboard .navigation div.inst{
   padding: 5px 30px 30px 90px;
-  /* box-shadow: 20px rgba(0 0 0/0.01); */
 }
 
 .dashboard .navigation div img.logo{
@@ -66,6 +65,7 @@ body {
   margin-left: 2px;
 }
 
+/*== Gift ==*/
 .dashboard .navigation div.gift{
 margin-left: 35px;
 border-radius: 10px;
@@ -100,12 +100,17 @@ position: relative;
   top: 185px;
   left: 90px;
   border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
 }
+/*== Gift end ==*/
+
 
 /*Navigation end*/
 
 /*Main Dashboard*/
 /*Search*/
+
 .dashboard .main .search{
   display: flex;
   justify-content: space-between;
@@ -113,22 +118,25 @@ position: relative;
   margin-top: 60px;
   box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.3);
 }
+
 .dashboard .main .search h1{
   margin-top: 10px;
   position: absolute;
 }
+
 .dashboard .main .search form {
   margin: 50px 0px 20px 5px;
   position: relative;
 }
+
 .dashboard .main .search form input{
-width: 100%;
-font-size: 16px;
-padding: 10px 10px 10px 10px;
-border: 1px solid #dadada;
-border-radius: 20px;
-font-weight: bold;
-background-color: rgba(0 0 0 / 0);
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: rgba(0 0 0 / 0);
 }
 /* input[type="text"]::placeholder{
   padding-left: -90px;
@@ -138,9 +146,11 @@ background-color: rgba(0 0 0 / 0);
   top: 10px;
   right: 8px;
 }
+
 .dashboard .main .search div{
   margin-top: 50px;
 }
+
 .dashboard .main .search .notification img:nth-child(1){
   margin-right: 30px;
 }
@@ -191,6 +201,7 @@ background-color: rgba(0 0 0 / 0);
 /*== First Chart end ==*/
 
 /*== Second Chart ==*/
+
 .dashboard .main div.second_chart{
   height: 300px;
   color: black;
@@ -227,6 +238,7 @@ background-color: rgba(0 0 0 / 0);
 /*== Second Chart end==*/
 
 /*== Third Chart ==*/
+
 .dashboard .main div.third_chart{
   height: 300px;
   color: black;
@@ -337,6 +349,7 @@ td{
 
 /* == Table ends== */
 
+/*== ==*/
 .dashboard .main .last{
   width: 100%;
   height: 350px;
@@ -368,12 +381,11 @@ td{
   color: red;
   font-size: 17px;
   border-radius: 40px;
-  /* position: absolute; */
 }
 
-.dashboard .main .last .words img{
+.dashboard .main .last  img{
   top: 145px;
-  right: -55px;
+  right: 30px;
   height: 205px;
   position: absolute;
 }
@@ -385,7 +397,7 @@ td{
 }
 
 .dashboard .navigation .inst img{
-  margin: 40px 0px 20px 180px;
+   margin: 40px 0px 20px 180px;
 }
 
 .dashboard .navigation .tab{
@@ -410,7 +422,7 @@ td{
 }
 
 .dashboard .navigation .gift button{
-  left: 210px;
+  left: 290px;
   top: 200px;
   font-weight: bold;
   font-size: 17px;
@@ -511,7 +523,7 @@ table{
 }
 
 .dashboard .main table thead tr th.number{
-  left: 15px;
+  left: 5px;
   position: absolute;
   top: 12px;
 }
@@ -553,11 +565,9 @@ table{
 
 td{
   padding: 6px;
-  /* text-align: center; */
 }
 
 tr td.number{
-  /* position: absolute; */
   right: 50px;
 }
 
@@ -582,5 +592,85 @@ tr td.course_name{
   left: 100px;
 }
 
+.dashboard .main .last{
+  position: relative;
+  height: 330px;
+}
 
+.dashboard .main .last  img{
+  height: 230px;
+  top: 100px;
+  right: 100px;
+}
+
+}
+
+
+@media only screen and (min-width: 1280px){
+.dashboard .navigation{
+  display: block;
+  width: 20%;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  height: 720px;
+  box-shadow: 2px 0px 15px 2px rgba(0 0 0/ 0.3)
+}
+
+.dashboard .navigation div img.logo{
+  margin-left: -50px;
+  margin-top: 10px;
+  height: 30px;
+  width: 200px;
+}
+
+.dashboard .navigation .tab{
+  margin-top: -20px;
+}
+
+.dashboard .navigation .tab .unit{
+  height: 40px;
+}
+
+.dashboard .navigation .tab .unit img{
+  height: 20px;
+  margin-top: 5px;
+}
+
+.dashboard .navigation .tab .unit p{
+  font-size: 10px;
+  top: 55px;
+  left: 0px;
+}
+
+.dashboard .navigation .tab .unit .category{
+  height: 40px;
+  width: 13px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.dashboard .navigation .gift{
+  bottom: 100px;
+}
+
+.dashboard .navigation .gift .box{
+  width: 250px;
+  margin-left: 5px;
+}
+
+.dashboard .navigation .gift p{
+  font-size: 15px;
+  top: 130px;
+  left: 60px;
+}
+/* == Gift end ==*/
+
+.dashboard .navigation .gift button{
+  left: 60px;
+  font-size: 13px;
+}
+.main{
+  width: 78%;
+  margin-left: 22%;
+  margin-top: -780px;
+}
 }
