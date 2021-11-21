@@ -28,6 +28,7 @@ body {
   width: 200px;
 }
 
+/* Tab */
 .dashboard .navigation .tab{
   display: block;
   width: 100%;
@@ -65,13 +66,14 @@ body {
   height: 50px;
   margin-left: 2px;
 }
+/* Tab ends */
 
 /*== Gift ==*/
 .dashboard .navigation div.gift{
 margin-left: 35px;
 border-radius: 10px;
 background-color: whitesmoke;
-box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.3);
+box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.15);
 height: 250px;
 margin: 30px 20px 50px 20px;
 position: relative;
@@ -110,14 +112,14 @@ position: relative;
 /*Navigation end*/
 
 /*Main Dashboard*/
-/*Search*/
 
+/*Search*/
 .dashboard .main .search{
   display: flex;
   justify-content: space-between;
   position: relative;
   margin-top: 60px;
-  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.3);
+  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.15);
 }
 
 .dashboard .main .search h1{
@@ -169,7 +171,7 @@ position: relative;
   height: 300px;
   color: black;
   margin: 60px 20px 20px 20px;
-  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.3);
+  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.15);
   border-radius: 20px;
   position: relative;
 }
@@ -198,7 +200,6 @@ position: relative;
   margin: 130px 0px 0px 80px;
 }
 
-
 /*== First Chart end ==*/
 
 /*== Second Chart ==*/
@@ -208,7 +209,7 @@ position: relative;
   color: black;
   background-color: white;
   margin: 60px 20px 20px 20px;
-  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.3);
+  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.15);
   border-radius: 20px;
   position: relative;
 }
@@ -244,7 +245,7 @@ position: relative;
   height: 300px;
   color: black;
   margin: 60px 20px 20px 20px;
-  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.3);
+  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.15);
   border-radius: 20px;
   position: relative;
 }
@@ -283,6 +284,7 @@ position: absolute;
   position: relative;
 }
 
+/* Table head*/
 .dashboard .main table thead{
   width: 100%;
   height: 50px;
@@ -290,7 +292,7 @@ position: absolute;
   background-color: black;
   color: white;
   border-radius: 10px 10px 0px 0px;
-  box-shadow: 0px 0px 15px 0px rgba(0 0 0/ 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(0 0 0/ 0.15);
 }
 
 .dashboard .main table thead tr th{
@@ -332,7 +334,9 @@ position: absolute;
   position: absolute;
   top: 12px;
 }
+/* Table head ends */
 
+/* Taby body */
 .dashboard .main table tbody{
   width: 100%;
   background-color: white;
@@ -340,17 +344,18 @@ position: absolute;
   border-radius: 0px 0px 10px 10px;
   position: absolute;
   margin-top: 50px;
-  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.3)
+  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.15)
 }
 
 td{
   padding: 6px;
   text-align: center;
 }
+/* Taby body ends */
 
-/* == Table ends== */
+/* == Table ends == */
 
-/*== ==*/
+/*== Last ==*/
 .dashboard .main .last{
   width: 100%;
   height: 350px;
@@ -359,7 +364,7 @@ td{
   margin: 450px 0px 0px 0px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 2px 2px 15px 3px rgba(0 0 0 / 0.3);
+  box-shadow: 2px 2px 15px 3px rgba(0 0 0 / 0.15);
 }
 
 .dashboard .main .last .words{
@@ -516,7 +521,7 @@ table{
   background-color: black;
   color: white;
   border-radius: 10px 10px 0px 0px;
-  box-shadow: 0px 0px 15px 0px rgba(0 0 0/ 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(0 0 0/ 0.15);
 }
 
 .dashboard .main table thead tr th{
@@ -561,7 +566,7 @@ table{
   border-radius: 0px 0px 10px 10px;
   position: absolute;
   margin-top: 50px;
-  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.3)
+  box-shadow: 2px 2px 15px 2px rgba(0 0 0/ 0.15)
 }
 
 td{
@@ -613,8 +618,8 @@ tr td.course_name{
   width: 15%;
   padding-bottom: 5px;
   margin-top: 0px;
-  height: 720px;
-  box-shadow: 2px 0px 15px 2px rgba(0 0 0/ 0.3)
+  height: 700px;
+  box-shadow: 2px 0px 15px 2px rgba(0 0 0/ 0.15)
 }
 
 .dashboard .navigation div img.logo{
@@ -651,7 +656,7 @@ tr td.course_name{
 
 .dashboard .navigation .gift{
   height: 150px;
-  bottom: 100px;
+  bottom: 125px;
 }
 
 .dashboard .navigation .gift .box{
@@ -676,15 +681,19 @@ tr td.course_name{
 }
 /* == Gift end ==*/
 
+/* Main */
 .main{
   width: 71%;
   margin-left: 17%;
-  margin-top: -780px;
+  margin-top: -760px;
 }
 
+/* Search */
 .dashboard .main .search{
   height: 60px;
-  width: 1260px;
+  width: 1300px;
+  margin-left: -31px;
+  box-shadow: 2px 0px 15px 2px rgba(0 0 0/ 0.15)
 }
 
 .dashboard .main .search form{
@@ -694,18 +703,18 @@ tr td.course_name{
 .dashboard .main .search form input{
   height: 40px;
   margin-left: 370px;
+  font-size: 15px;
 }
 
 .dashboard .main .search div{
   margin-top: 10px;
 }
+/* Search ends */
+
 
 /* Chart */
 .dashboard .main .chart{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: -30px;
+  margin-top: -40px;
   position: relative;
   height: 220px;
 }
@@ -812,4 +821,83 @@ tr td.course_name{
   margin: 70px 0px 0px -150px;
 }
 /* Third chart ends */
+
+
+table{
+  margin-top: 25px;
+  /* width: 100%; */
+  margin-left: 70px;
+}
+
+.dashboard .main table thead tr th{
+  font-size: 15px;
+}
+
+.dashboard .main table thead tr th.number{
+  left: 0px;
+}
+
+.dashboard .main table thead tr th.course_name{
+  left: 150px;
+}
+
+.dashboard .main table thead tr th.department{
+  left: 450px;
+}
+
+.dashboard .main table thead tr th.units{
+  right: -200px;
+}
+
+.dashboard .main table thead tr th.gpa{
+  right: -270px;
+}
+
+/* Table body */
+.dashboard .main table tbody{
+  height: 200px;
+}
+
+td{
+  padding: 1px 1px 1px 1px;
+}
+
+tr td.number{
+  right: 120px;
+}
+
+tr td.course_name{
+  left: 150px;
+}
+
+tr td.department{
+  left: 450px;
+}
+
+tr td.units{
+   right: 300px;
+}
+
+tr td.gpa{
+  right: 30px;
+}
+
+/* Table body ends*/
+
+/* Last */
+.dashboard .main .last{
+  margin-top: 260px;
+  margin-left: 70px;
+  height: 160px;
+}
+
+.dashboard .main .last img{
+  height: 170px;
+  top: -10px;
+}
+
+.dashboard .main .last .words button{
+  height: 40px;
+}
+/* Last ends */
 }
